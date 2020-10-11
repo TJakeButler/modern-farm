@@ -1,4 +1,3 @@
-import { addPlant, usePlants } from "./field.js";
 // Start of JS Logic
 
 
@@ -12,7 +11,7 @@ import { createWheat } from "./seeds/wheat.js";
 import {addPlant, usePlants} from "./field.js";
 
 
-const addPlantMain = addPlant();
+const addPlantMain = addPlant(createAsparagus());
 const usePlantMain = usePlants();
 
 const yearlyPlan = createPlan(); 
@@ -25,12 +24,15 @@ const wheatSeed = createWheat();
 const cornSeed = createCorn();
 
 console.log("Welcome to the main module")
+console.log(addPlantMain)
+console.log(usePlantMain)
 
-console.log(cornSeed);
-console.log(wheatSeed);
-console.log(potatoSeed);
-console.log(asparagusSeed);
-console.log(sunflowerSeed);
-console.log(soybeanSeed);
 
-console.log(yearlyPlan);
+// console.log(cornSeed);
+// console.log(wheatSeed);
+// console.log(potatoSeed);
+// console.log(asparagusSeed);
+// console.log(sunflowerSeed);
+// console.log(soybeanSeed);
+
+// console.log(yearlyPlan);
